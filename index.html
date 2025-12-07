@@ -394,6 +394,12 @@
                     <p className="text-base sm:text-lg md:text-2xl text-gray-300 font-light mb-10 max-w-2xl mx-auto leading-relaxed px-2 drop-shadow-md">Transforma tu punto de venta en una máquina de rentabilidad automática. Logística inteligente, riesgo controlado y ganancias aseguradas.</p>
                     <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-6 sm:px-0"><button onClick={onNavigateToRegister} className="w-full sm:w-auto bg-gradient-to-r from-pink-600 to-pink-500 text-white px-8 py-3.5 rounded-full text-lg font-bold hover:shadow-pink-500/30 hover:shadow-2xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 active:scale-95">Solicitar Alta <ArrowRight className="w-5 h-5" /></button><button onClick={() => scrollToSection('rentabilidad')} className="w-full sm:w-auto bg-white/5 backdrop-blur-sm text-white border border-white/20 px-8 py-3.5 rounded-full text-lg font-bold hover:bg-white/10 transition-all flex items-center justify-center gap-2 active:scale-95"><BarChart3 className="w-5 h-5" /> Ver Rentabilidad</button></div>
                 </div>
+                
+                {/* Scroll Indicator */}
+                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce text-white/50 cursor-pointer" onClick={() => scrollToSection('rentabilidad')}>
+                    <span className="text-[10px] font-bold tracking-widest uppercase mb-1">Desliza</span>
+                    <ChevronDown className="w-5 h-5" />
+                </div>
                 </header>
 
                 {/* PSICOLOGIA - Layout limpio */}
